@@ -10,12 +10,27 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // 創建UIWindow實例
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // 創建WeatherViewController實例
+        let weatherViewController = WeatherViewController()
+        
+        // 如果需要導航控制器
+        let navigationController = UINavigationController(rootViewController: weatherViewController)
+        
+        // 設定window的rootViewController為navigationController
+        window?.rootViewController = navigationController
+        
+        // 使window可見
+        window?.makeKeyAndVisible()
+        
         return true
     }
+
 
     // MARK: UISceneSession Lifecycle
 
