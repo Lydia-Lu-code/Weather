@@ -72,6 +72,7 @@
 			children = (
 				5CCA85442D841CCF00DE9BC4 /* AppDelegate.swift */,
 				5CCA85462D841CCF00DE9BC4 /* SceneDelegate.swift */,
+				5CCA856D2D857FB700DE9BC4 /* Service */,
 				5CCA85612D841EA300DE9BC4 /* Views */,
 				5CCA855E2D841E6E00DE9BC4 /* ViewModels */,
 				5CCA855B2D841E4100DE9BC4 /* Models */,
@@ -104,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				5CCA855F2D841E7A00DE9BC4 /* WeatherViewModel.swift */,
-				5CCA85622D841EC800DE9BC4 /* LocationManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -118,6 +118,15 @@
 				5CCA85682D84225000DE9BC4 /* DailyForecastCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5CCA856D2D857FB700DE9BC4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5CCA85622D841EC800DE9BC4 /* LocationManager.swift */,
+			);
+			name = Service;
+			path = "New Group/Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
